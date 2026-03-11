@@ -1,0 +1,22 @@
+{
+    "name": "thiago270906/aguaazul",
+    "description": "Website Agua Azul",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "app\\": "app/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Thiago Lopes",
+            "email": "thiagoohmlopes@gmail.com",
+            "homepage": "https://www.aguaazul.de",
+            "role": "Devloper"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=8.0"
+    }
+}

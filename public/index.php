@@ -1,3 +1,7 @@
+<?php
+ require 'vendor/autoload.php'
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -30,7 +34,7 @@
             <li><a class="hover:opacity-70 transition duration-300" href="pescaLazer.php">Pesca e Lazer</a></li>
             <li><a class="hover:opacity-70 transition duration-300" href="restaurante.html">Restaurante</a></li>
             <li><a class="hover:opacity-70 transition duration-300" href="restaurante.html">Pizzaria</a></li>
-            <li><a class="hover:opacity-70 transition duration-300" href="https://wa.me/5519996921290"  target="_blank">Contato</a></li>
+            <li><a class="hover:opacity-70 transition duration-300" href="https://wa.me/5519971011205"  target="_blank">Contato</a></li>
         </ul>
 
         <a href="ingressos.html"

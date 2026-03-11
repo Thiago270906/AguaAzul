@@ -1,5 +1,5 @@
 <?php
- require 'vendor/autoload.php'
+require_once __DIR__ . '/../vendor/autoload.php';
 ?>
 
 <!DOCTYPE html>
@@ -9,10 +9,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Água Azul</title>
 
-    <!-- Tailwind CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
 
-    <!-- Fonte Inter -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap" rel="stylesheet">
 
     <style>
@@ -27,14 +25,14 @@
     <!-- NAVBAR -->
     <nav class="flex justify-around items-center bg-[#457AA6] h-[10vh]">
         
-        <img class="h-[60px]" src="images/agua-logo-removebg-preview.png" alt="logo">
+        <img class="h-[60px]" src="assets/img/agua-logo-removebg-preview.png" alt="logo">
 
         <ul class="flex space-x-8 text-white">
             <li><a class="hover:opacity-70 transition duration-300" href="index.php">Home</a></li>
             <li><a class="hover:opacity-70 transition duration-300" href="pescaLazer.php">Pesca e Lazer</a></li>
             <li><a class="hover:opacity-70 transition duration-300" href="restaurante.html">Restaurante</a></li>
             <li><a class="hover:opacity-70 transition duration-300" href="restaurante.html">Pizzaria</a></li>
-            <li><a class="hover:opacity-70 transition duration-300" href="https://wa.me/5519971011205"  target="_blank">Contato</a></li>
+            <li><a class="hover:opacity-70 transition duration-300" href="https://wa.me/5519971011205" target="_blank">Contato</a></li>
         </ul>
 
         <a href="ingressos.html"
@@ -46,7 +44,7 @@
     <!-- MAIN -->
     <main class="bg-gray-50 text-[16px]">
 
-        <img class="h-[575px] w-full object-cover mb-12" src="images/banner-topo.png" alt="Banner-Entrada">
+        <img class="h-[575px] w-full object-cover mb-12" src="assets/img/banner-topo.png" alt="Banner-Entrada">
 
         <div class="flex justify-around gap-10 items-start px-10">
 
@@ -87,12 +85,13 @@
                 </div>
             </div>
             
-
-            <img class="h-[350px] shrink-0" src="images/fotos-aaz.png" alt="Agua-Azul">
+            <img class="h-[350px] shrink-0" src="assets/img/fotos-aaz.png" alt="Agua-Azul">
 
         </div>
-         <img class="mt-12 mb-12 h-full w-full object-cover mb-12" src="images/Barra 2.png" alt="Banner">
-         <div class="flex justify-around gap-[170px] items-start px-10">
+
+        <img class="mt-12 mb-12 h-full w-full object-cover mb-12" src="assets/img/Barra 2.png" alt="Banner">
+
+        <div class="flex justify-around gap-[170px] items-start px-10">
 
             <div>
                 <h2 class="text-[#F55F12] text-[17px] uppercase">
@@ -104,54 +103,43 @@
                 </h1>
 
                 <div class="max-w-[500px]">
-                    
                     <p class="max-w-[450px] mt-4">
                         Nosso parque aquático conta com piscinas refrescantes, playground para os pequenos e atividades como pedalinho.
                     </p>
-
                 </div>
             </div>
-                <div class="w-[280px] h-[220px] p-1 flex items-center justify-center"></div>
+
+            <div class="w-[280px] h-[220px] p-1 flex items-center justify-center"></div>
         </div>
 
-            <!-- CARDS -->
+        <!-- CARDS -->
         <div class="flex justify-center w-full"></div>
-            <div class="flex justify-around w-full gap-[150px]">
-                <div class="w-[280px] h-[325px] border border-[#0f0f0f] rounded-xl bg-gray-50 flex flex-col items-center justify-between">
-
-                    <img class="w-[270px] h-[270px] object-contain"
-                        src="images/balde-img.png">
-
-                    <p class="text-[35px] text-center text-[#f55f12] font-bold uppercase pb-2">
-                        baldão
-                    </p>
-
-                </div>
-
-                <div class="w-[280px] h-[325px] border border-[#0f0f0f] rounded-xl bg-gray-50 flex flex-col items-center justify-between">
-
-                    <img class="w-[270px] h-[270px] object-contain"
-                        src="images/toboagua-img.png">
-                    <p class="text-[35px] text-center text-[#f7c314] font-bold uppercase pb-2">
-                        toboágua
-                    </p>
-                </div>
-
-                <div class="w-[280px] h-[325px] border border-[#0f0f0f] rounded-xl bg-gray-50 flex flex-col items-center justify-between">
-
-                    <img class="w-[270px] h-[270px] object-contain" 
-                        src="images/piscina-img.png">
-                    <p class="text-[35px] text-center text-[#457aa6] font-bold uppercase pb-2">
-                        piscina
-                    </p>
-                </div>
+        <div class="flex justify-around w-full gap-[150px]">
+            <div class="w-[280px] h-[325px] border border-[#0f0f0f] rounded-xl bg-gray-50 flex flex-col items-center justify-between">
+                <img class="w-[270px] h-[270px] object-contain" src="assets/img/balde-img.png" alt="Baldão">
+                <p class="text-[35px] text-center text-[#f55f12] font-bold uppercase pb-2">
+                    baldão
+                </p>
             </div>
 
+            <div class="w-[280px] h-[325px] border border-[#0f0f0f] rounded-xl bg-gray-50 flex flex-col items-center justify-between">
+                <img class="w-[270px] h-[270px] object-contain" src="assets/img/toboagua-img.png" alt="Toboágua">
+                <p class="text-[35px] text-center text-[#f7c314] font-bold uppercase pb-2">
+                    toboágua
+                </p>
+            </div>
+
+            <div class="w-[280px] h-[325px] border border-[#0f0f0f] rounded-xl bg-gray-50 flex flex-col items-center justify-between">
+                <img class="w-[270px] h-[270px] object-contain" src="assets/img/piscina-img.png" alt="Piscina">
+                <p class="text-[35px] text-center text-[#457aa6] font-bold uppercase pb-2">
+                    piscina
+                </p>
+            </div>
         </div>
-        <div class="mt-12 mb-12 h-[500px] bg-[url('images/fundo-pesca.png')] bg-cover bg-center bg-no-repeat text-gray-50 flex justify-around gap-10 items-center px-10">
- 
+
+        <div class="mt-12 mb-12 h-[500px] bg-[url('assets/img/fundo-pesca.png')] bg-cover bg-center bg-no-repeat text-gray-50 flex justify-around gap-10 items-center px-10">
             
-            <img class="h-[350px] shrink-0" src="images/aaz-cima.png" alt="Agua-Azul">
+            <img class="h-[350px] shrink-0" src="assets/img/aaz-cima.png" alt="Agua-Azul">
 
             <div>
                 <h2 class="text-[17px] uppercase">
@@ -163,7 +151,6 @@
                 </h1>
 
                 <div class="max-w-[500px]">
-                    
                     <p class="max-w-[450px] mt-4">
                         No Água Azul, a pesca esportiva é uma experiência para toda a família! Nosso pesqueiro conta com tanques amplos e bem cuidados. 
                         Aqui, o objetivo é aproveitar o momento, relaxar e se conectar com a natureza. Traga sua vara de pesca ou alugue a nossa e viva 
@@ -179,6 +166,7 @@
             </div>
 
         </div>
+
         <div class="flex justify-around gap-[170px] items-start px-10">
 
             <div>
@@ -191,7 +179,6 @@
                 </h1>
 
                 <div class="max-w-[500px]">
-                    
                     <p class="max-w-[450px] mt-4">
                         Depois de um mergulho na diversão, nada melhor que saborear uma boa comida caseira! 
                         Nosso restaurante oferece self-service à vontade aos sábados e aos domingos. 
@@ -208,30 +195,24 @@
                 </div>
             </div>
             
-
-                <div class="w-[280px] border border-[#0f0f0f] rounded-xl bg-gray-50 p-1 flex items-center justify-center">
-
-                    <img class="max-w-full object-contain"
-                        src="images/restaurante1.png">
-
-                </div>
+            <div class="w-[280px] border border-[#0f0f0f] rounded-xl bg-gray-50 p-1 flex items-center justify-center">
+                <img class="max-w-full object-contain" src="assets/img/restaurante1.png" alt="Restaurante 1">
+            </div>
         </div>
+
         <div class="flex justify-center w-full ">
             <div class="flex justify-evenly mt-12 w-full">
 
                 <div class="w-[280px] border border-[#0f0f0f] rounded-xl bg-gray-50 p-1 flex items-center justify-center">
-                    <img class="max-w-full object-contain"
-                        src="images/cerveja.png">
+                    <img class="max-w-full object-contain" src="assets/img/cerveja.png" alt="Cerveja">
                 </div>
 
                 <div class="w-[280px] border border-[#0f0f0f] rounded-xl bg-gray-50 p-1 flex items-center justify-center">
-                    <img class="max-w-full object-contain"
-                        src="images/comida.png">
+                    <img class="max-w-full object-contain" src="assets/img/comida.png" alt="Comida">
                 </div>
 
                 <div class="w-[280px] border border-[#0f0f0f] rounded-xl bg-gray-50 p-1 flex items-center justify-center">
-                    <img class="max-w-full object-contain"
-                        src="images/restaurante2.png">
+                    <img class="max-w-full object-contain" src="assets/img/restaurante2.png" alt="Restaurante 2">
                 </div>
 
             </div>
@@ -240,7 +221,6 @@
 
     <footer class="relative bg-[#F55F12] radios text-white mt-[150px] pt-32 pb-8">
 
-        <!-- CARD CONTATO -->
         <div class="absolute -top-16 left-1/2 -translate-x-1/2 
                     bg-gray-100 text-gray-800 
                     w-[90%] max-w-4xl 
@@ -262,13 +242,10 @@
             </a>
         </div>
 
-
-        <!-- CONTEÚDO PRINCIPAL -->
         <div class="max-w-6xl mx-auto px-6">
 
             <div class="flex justify-center gap-40">
 
-                <!-- MENU -->
                 <div>
                     <h3 class="text-3xl font-bold text-[#457AA6] uppercase mb-4">
                         Menu
@@ -281,7 +258,6 @@
                     </ul>
                 </div>
 
-                <!-- INFORMAÇÕES -->
                 <div>
                     <h3 class="text-3xl font-bold text-[#457AA6] uppercase mb-4">
                         Informações
@@ -296,7 +272,6 @@
 
             </div>
 
-            <!-- BOTÃO CENTRAL -->
             <div class="flex justify-center mt-12">
                 <a href="#"
                 class="bg-[#457AA6] text-white px-8 py-3 rounded-full font-semibold hover:opacity-90 transition">
@@ -304,7 +279,6 @@
                 </a>
             </div>
 
-            <!-- LINHA -->
             <div class="border-t border-white/40 mt-10 pt-6 text-center text-sm">
                 ©2025 todos os direitos reservados. Desenvolvido por Thiago Lopes
             </div>
